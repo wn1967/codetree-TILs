@@ -6,3 +6,4 @@ for i in range(n):
         print(text[-(i+1)], end="")
     else:
         print(text)
+        break
