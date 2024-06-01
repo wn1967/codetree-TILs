@@ -1,7 +1,6 @@
 n = int(input())
 
-if n < 5:
-    print(n*n)
+aa=n*n
+if n< 5:
     print(tiny)
-else:
-    print(n*n)
+print(aa)
