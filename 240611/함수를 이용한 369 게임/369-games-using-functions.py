@@ -1,9 +1,7 @@
-a,b = map(int, input().split())
+def isthis(a,b):
+    count = 0
 
-count = 0
 
-def isthis():
-    global count
     for j in range(a,b+1):
         number = str(j)
         blank=[]
@@ -12,11 +10,13 @@ def isthis():
             count += 1
         
         else:
-            for k in range(len(number)):
-                blank.append(int(number[k]))
-                if blank[k] == 3 or blank[k] == 6 or blank[k] == 9 :
-                    count += 1
+            if '3' in number or '6' in number or '9' in number:
+                count += 1
+    return count
 
-isthis()    
+a,b = map(int, input().split())
 
-print(count)
+
+result = isthis(a,b)    
+
+print(result)
