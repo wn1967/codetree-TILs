@@ -15,3 +15,4 @@ for i in range(len(A)):
             print('No')
     else:
         print('No')
+        break
