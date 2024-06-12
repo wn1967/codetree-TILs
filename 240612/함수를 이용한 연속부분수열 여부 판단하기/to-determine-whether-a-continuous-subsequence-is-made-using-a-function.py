@@ -13,3 +13,5 @@ for i in range(len(A)):
             print('Yes')
         else:
             print('No')
+    else:
+        print('No')
