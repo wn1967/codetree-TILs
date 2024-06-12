@@ -6,12 +6,15 @@ cb = int(c)
 
 if  o == '+':
     result = ab + cb
+    print(a,o,c, '=', result)
 elif  o == '-':
     result = ab - cb
+    print(a,o,c, '=', result)
 elif  o == '*':
     result = ab * cb
+    print(a,o,c, '=', result)
 elif  o == '/':
     result = ab // cb
-
-
-print(a,o,c, '=', result)
+    print(a,o,c, '=', result)
+else:
+    print('False')
