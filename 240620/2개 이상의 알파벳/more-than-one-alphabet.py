@@ -9,11 +9,10 @@ def check(word):
         else:
             blank.append(i)
 
-    return result
 
 check(word)
 
-if result == 'False':
+if len(blank) >= 2:
     print('Yes')
 else:
     print('No')
