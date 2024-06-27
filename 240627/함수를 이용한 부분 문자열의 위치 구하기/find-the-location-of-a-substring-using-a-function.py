@@ -9,9 +9,10 @@ def check(word, search):
             if word[i+j] == search[j]:
                 result += 1  
         key = result      
-    if key == len(search):
-        print(i)
-    elif key < len(search):
+        if key == len(search):
+            print(i)
+            break
+    if key < len(search):
         print(-1)
 
 check(word, search)
