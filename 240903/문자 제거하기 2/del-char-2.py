@@ -5,7 +5,7 @@ n = int(n)
 for i in range(n):
     number = int(input())
 
-    if number < n:
+    if 1<= number <= len(a):
         a.pop(number-1)
     else:
         continue
