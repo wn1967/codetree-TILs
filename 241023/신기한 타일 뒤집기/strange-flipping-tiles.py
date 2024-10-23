@@ -1,5 +1,5 @@
 N = int(input())
-blank = [0]*200000
+blank = [0]*200001
 key = 100000
 
 for i in range(N):
@@ -8,7 +8,7 @@ for i in range(N):
     if B == "R":
         beforekey = key
         key += A
-        for j in range(beforekey,key-1):
+        for j in range(beforekey,key):
             blank[j] = 1
 
     elif B == "L":
