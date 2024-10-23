@@ -8,16 +8,14 @@ for i in range(N):
     if B == "R":
         beforekey = key
         key += A
-        for j in range(beforekey+90000,key+90000):
+        for j in range(beforekey,key-1):
             blank[j] = 1
 
     elif B == "L":
         beforekey = key
         key -= A
-        for j in range(key+90000, beforekey+90000):
+        for j in range(key, beforekey):
             blank[j] = 2
-
-# print(blank)
 
 wcount = 0
 bcount = 0
