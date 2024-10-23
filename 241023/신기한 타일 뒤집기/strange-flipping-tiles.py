@@ -9,13 +9,15 @@ for i in range(N):
         beforekey = key
         key += A
         for j in range(beforekey,key):
-            blank[j] = 1
+            if 0 <= j < 200001:
+                blank[j] = 1
 
     elif B == "L":
         beforekey = key
         key -= A
         for j in range(key, beforekey):
-            blank[j] = 2
+            if 0 <= j < 200001:
+                blank[j] = 2
 
 wcount = 0
 bcount = 0
