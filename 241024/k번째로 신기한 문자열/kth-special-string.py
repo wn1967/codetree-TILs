@@ -7,13 +7,7 @@ blank = []
 
 for i in range(n):
     word = input()
-    key = len(T)
-    for j in range(key):
-        correct = 0
-        if word[j] !=  T[j]:
-            correct = 1
-    
-    if correct == 0:
+    if word.startswith(T):
         blank.append(word)
 
 blank2 = sorted(blank)
