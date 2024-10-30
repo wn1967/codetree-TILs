@@ -7,11 +7,19 @@ x3, y3, x4, y4 = map(int, input().split())
 
 for z in range(x1+OFFSET,x2+OFFSET):
     for x in range(y1+OFFSET,y2+OFFSET):
-        array[z][x] += 1
+        if (x1+OFFSET and y1+OFFSET) or (x2+OFFSET  and y2+OFFSET) < 0:
+            x -= 1
+            z -= 1
+            array[z][x] += 1
+        else:
+            array[z][x] += 1
     
 for z in range(x3+OFFSET,x4+OFFSET):
     for x in range(y3+OFFSET,y4+OFFSET):
-        array[z][x] = 0
+        if x and z < 0:
+            x -= 1
+            z -= 1
+            array[z][x] = 0
 
 
 blank = []
@@ -23,7 +31,6 @@ for a in range(2001):
     blank.append(count)
 
 blank2 = []
-
 for c in range(2001):
     count2 = 0
     for d in range(2001):
