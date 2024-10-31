@@ -6,7 +6,7 @@ for i in range(N):
 # print(arr)
 arr2 = []
 count = 1
-for j in range(1,N):
+for j in range(0,N-1):
     if arr[j] > 0 and arr[j-1] >0:
         count += 1
     elif arr[j] > 0 and arr[j-1] < 0:
