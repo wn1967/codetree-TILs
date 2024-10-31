@@ -4,11 +4,16 @@ for i in range(N):
     aa = int(input())
     blank.append(aa)
 
+blank2 = []
+
 cnt = 0
 for j in range(N):
-    if blank[j] == 0 or blank[j] != blank[j-1]:
-        cnt += 1
-    elif len(blank) == 1:
-        cnt = 1
+    cnt += 1
+    if blank[j] == blank[j-1]:
         
-print(cnt)
+        blank2.append(cnt)
+    elif blank[j] != blank[j-1]:
+        blank2.append(cnt)
+        cnt = 1
+
+print(max(blank2))
