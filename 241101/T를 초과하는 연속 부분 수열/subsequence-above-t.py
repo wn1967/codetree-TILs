@@ -13,8 +13,11 @@ for i in range(1,n):
     if arr[i]>t and arr[i] >= arr[i-1]:
         count += 1
         maxv = max(maxv,count)
-    else:
+    elif arr[i]<t:
         count = 0
+        maxv = max(maxv,count)
+    elif arr[i]>t and arr[i] < arr[i-1]:
+        count = 1
         maxv = max(maxv,count)
 
     
