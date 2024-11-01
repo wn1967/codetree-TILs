@@ -14,4 +14,4 @@ for j in range(N):
         count = 1
         maxvalue = max(count, maxvalue)
     
-    print(maxvalue)
+print(maxvalue)
