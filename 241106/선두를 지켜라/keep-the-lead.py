@@ -34,8 +34,7 @@ for z in range(len(timeline)):
     else:
         pass
     
-for i in range(len(side)):
+for i in range(1, len(side)):
     if side[i] != side[i-1]:
         result += 1
-
 print(result)
